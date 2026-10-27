@@ -1,113 +1,236 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Book an Appointment | UNISEX SALON</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Book Appointment | UNISEX SALON</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header class="site-header">
-  <nav class="navbar container" aria-label="Main navigation">
-    <a class="brand" href="index.html"><span class="brand-icon">U</span><span>UNISEX SALON</span></a>
-    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
-    <div class="nav-links" id="navLinks">
-      <a href="index.html">Home</a><a href="men.html">Men</a><a href="women.html">Women</a>
-      <a href="services.html">Services</a><a href="gallery.html">Gallery</a>
-      <a href="about.html">About</a><a href="contact.html">Contact</a>
-      <a class="nav-book active" href="booking.html">Book Now</a>
-    </div>
-  </nav>
-</header>
+    <header class="site-header">
+        <a class="logo" href="index.html">
+            UNISEX<span>SALON</span>
+        </a>
 
-<main>
-  <section class="page-hero">
-    <div class="container">
-      <p class="eyebrow">YOUR NEXT VISIT</p>
-      <h1>Let's make time for <em>you.</em></h1>
-      <p>Send an appointment request to discuss your preferred service, date and time.</p>
-    </div>
-  </section>
+        <button class="menu-toggle" type="button"
+                aria-label="Toggle navigation"
+                aria-expanded="false">
+            ☰
+        </button>
 
-  <section class="section-padding container booking-layout">
-    <div>
-      <p class="eyebrow">APPOINTMENT REQUEST</p>
-      <h2>Tell us what you <em>need.</em></h2>
-      <p>Complete the form with your details. When you submit it, your device may open an email app with your request ready to send.</p>
-      <div class="contact-detail">
-        <strong>Before you submit</strong>
-        <p>Check your details and choose your preferred date and time. The salon must confirm your appointment.</p>
-      </div>
-      <div class="contact-detail">
-        <strong>Service prices</strong>
-        <p>Please confirm the final price with the salon before your service begins.</p>
-      </div>
-    </div>
+        <nav class="site-nav">
+            <a href="index.html">Home</a>
+            <a href="men.html">Men</a>
+            <a href="women.html">Women</a>
+            <a href="services.html">Services</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="booking.html" aria-current="page">Book Now</a>
+        </nav>
+    </header>
 
-    <form class="booking-form" id="bookingForm">
-      <h2>Book an Appointment</h2>
+    <main>
+        <section class="booking-section">
 
-      <label for="fullName">Full name</label>
-      <input id="fullName" name="fullName" type="text" placeholder="Your full name" required>
+            <header class="booking-heading">
+                <p>YOUR SELF-CARE BEGINS HERE</p>
+                <h1>Book Your Experience</h1>
+                <p>
+                    Your style, your choice, your experience.
+                    Request your next salon appointment with us.
+                </p>
+            </header>
 
-      <label for="phone">Phone number</label>
-      <input id="phone" name="phone" type="tel" placeholder="Your contact number" required>
+            <div class="booking-layout">
 
-      <label for="email">Email (optional)</label>
-      <input id="email" name="email" type="email" placeholder="you@example.com">
+                <aside class="booking-info">
+                    <h2>Let's Make You Feel Amazing</h2>
 
-      <label for="service">Choose a service</label>
-      <select id="service" name="service" required>
-        <option value="">Select a service</option>
-        <option>Men's haircut</option>
-        <option>Beard grooming</option>
-        <option>Women's haircut</option>
-        <option>Hair styling</option>
-        <option>Hair colour</option>
-        <option>Hair spa / care</option>
-        <option>Facial / skin care</option>
-        <option>Bridal / occasion styling</option>
-        <option>Manicure / pedicure</option>
-        <option>Other / consultation</option>
-      </select>
+                    <p>
+                        Discover personalised grooming, hair styling
+                        and beauty services at UNISEX SALON.
+                    </p>
 
-      <label for="appointmentDate">Preferred date</label>
-      <input id="appointmentDate" name="appointmentDate" type="date" required>
+                    <h3>✦ Personalised Services</h3>
+                    <p>Choose a service that suits your needs.</p>
 
-      <label for="appointmentTime">Preferred time</label>
-      <select id="appointmentTime" name="appointmentTime" required>
-        <option value="">Select a time</option>
-        <option>10:00 AM</option>
-        <option>11:00 AM</option>
-        <option>12:00 PM</option>
-        <option>1:00 PM</option>
-        <option>2:00 PM</option>
-        <option>3:00 PM</option>
-        <option>4:00 PM</option>
-        <option>5:00 PM</option>
-        <option>6:00 PM</option>
-        <option>7:00 PM</option>
-      </select>
+                    <h3>✦ Your Preferred Schedule</h3>
+                    <p>Select your preferred date and time.</p>
 
-      <label for="notes">Extra details (optional)</label>
-      <textarea id="notes" name="notes" rows="4" placeholder="Tell us your preferred style or any questions"></textarea>
+                    <h3>✦ Easy Appointment Request</h3>
+                    <p>Submit your details for salon follow-up.</p>
 
-      <button class="btn btn-primary form-submit" type="submit">Prepare Appointment Request</button>
-      <p id="formMessage" class="form-message" role="status"></p>
-    </form>
-  </section>
-</main>
+                    <p>
+                        <strong>Important:</strong>
+                        Your appointment is confirmed only after
+                        the salon responds.
+                    </p>
+                </aside>
 
-<footer class="site-footer">
-  <div class="container footer-grid">
-    <div class="footer-brand"><a class="brand" href="index.html"><span class="brand-icon">U</span><span>UNISEX SALON</span></a><p>We look forward to welcoming you.</p></div>
-    <div><h3>Explore</h3><a href="services.html">Services</a><a href="gallery.html">Gallery</a></div>
-    <div><h3>Need help?</h3><a href="contact.html">Contact the Salon</a><a href="about.html">About Us</a></div>
-  </div>
-  <div class="container footer-bottom">© <span id="currentYear"></span> UNISEX SALON</div>
-</footer>
+                <section class="booking-card">
+                    <h2>Appointment Inquiry</h2>
+
+                    <p>
+                        Fill in the details below.
+                        Fields marked * are required.
+                    </p>
+
+                    <form id="bookingForm">
+
+                        <div class="booking-fields">
+
+                            <div class="booking-field">
+                                <label for="fullName">Full Name *</label>
+                                <input
+                                    type="text"
+                                    id="fullName"
+                                    name="fullName"
+                                    placeholder="Enter your full name"
+                                    autocomplete="name"
+                                    minlength="2"
+                                    required>
+                            </div>
+
+                            <div class="booking-field">
+                                <label for="email">Email Address *</label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="you@example.com"
+                                    autocomplete="email"
+                                    required>
+                            </div>
+
+                            <div class="booking-field">
+                                <label for="phone">Phone Number *</label>
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    name="phone"
+                                    placeholder="Enter your phone number"
+                                    autocomplete="tel"
+                                    inputmode="tel"
+                                    pattern="[0-9+() -]{8,20}"
+                                    required>
+                            </div>
+
+                            <div class="booking-field">
+                                <label for="service">Choose Service *</label>
+                                <select id="service" name="service" required>
+                                    <option value="">Select a service</option>
+                                    <option value="Haircut and Styling">
+                                        Haircut & Styling
+                                    </option>
+                                    <option value="Hair Colour">
+                                        Hair Colour
+                                    </option>
+                                    <option value="Hair Spa">
+                                        Hair Spa
+                                    </option>
+                                    <option value="Facial and Skincare">
+                                        Facial & Skincare
+                                    </option>
+                                    <option value="Beard Grooming">
+                                        Beard Grooming
+                                    </option>
+                                    <option value="Manicure and Pedicure">
+                                        Manicure & Pedicure
+                                    </option>
+                                    <option value="Bridal and Party Makeup">
+                                        Bridal & Party Makeup
+                                    </option>
+                                    <option value="Complete Makeover">
+                                        Complete Makeover
+                                    </option>
+                                    <option value="Other Service">
+                                        Other Service
+                                    </option>
+                                </select>
+                            </div>
+
+                            <div class="booking-field">
+                                <label for="date">Preferred Date *</label>
+                                <input
+                                    type="date"
+                                    id="date"
+                                    name="date"
+                                    required>
+                            </div>
+
+                            <div class="booking-field">
+                                <label for="time">Preferred Time *</label>
+                                <select id="time" name="time" required>
+                                    <option value="">Choose a time</option>
+                                    <option value="10:00 AM">10:00 AM</option>
+                                    <option value="11:00 AM">11:00 AM</option>
+                                    <option value="12:00 PM">12:00 PM</option>
+                                    <option value="1:00 PM">1:00 PM</option>
+                                    <option value="2:00 PM">2:00 PM</option>
+                                    <option value="3:00 PM">3:00 PM</option>
+                                    <option value="4:00 PM">4:00 PM</option>
+                                    <option value="5:00 PM">5:00 PM</option>
+                                    <option value="6:00 PM">6:00 PM</option>
+                                </select>
+                            </div>
+
+                            <div class="booking-field full">
+                                <label for="message">
+                                    Tell Us Your Preferences *
+                                </label>
+
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    placeholder="Describe the hairstyle, treatment or service you want..."
+                                    minlength="3"
+                                    required></textarea>
+                            </div>
+
+                        </div>
+
+                        <button type="submit" class="booking-submit">
+                            REQUEST APPOINTMENT →
+                        </button>
+
+                        <p>
+                            By submitting this form, you are requesting
+                            an appointment. Please wait for confirmation
+                            from the salon.
+                        </p>
+
+                        <p id="bookingStatus" role="status"
+                           aria-live="polite"></p>
+
+                    </form>
+                </section>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="year"></span> UNISEX SALON.
+            All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <script>
+        const dateInput = document.getElementById("date");
+        const today = new Date();
+        const localDate = new Date(
+            today.getTime() - today.getTimezoneOffset() * 60000
+        ).toISOString().split("T")[0];
+
+        dateInput.min = localDate;
+    </script>
 
 </body>
 </html>
