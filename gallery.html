@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | UNISEX SALON</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="navbar container" aria-label="Main navigation">
+    <a class="brand" href="index.html"><span class="brand-icon">U</span><span>UNISEX SALON</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a><a href="men.html">Men</a><a href="women.html">Women</a>
+      <a href="services.html">Services</a><a class="active" href="gallery.html">Gallery</a>
+      <a href="about.html">About</a><a href="contact.html">Contact</a>
+      <a class="nav-book" href="booking.html">Book Now</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow">OUR STYLE INSPIRATION</p>
+      <h1>Looks worth <em>sharing.</em></h1>
+      <p>Explore salon interiors, hair styling and grooming inspiration.</p>
+    </div>
+  </section>
+
+  <section class="section-padding container">
+    <div class="section-heading">
+      <p class="eyebrow">THE GALLERY</p>
+      <h2>Style in every <em>detail.</em></h2>
+      <p>These are sample reference photos. Replace them with your own salon photos when available.</p>
+    </div>
+
+    <div class="gallery-large">
+      <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=900&q=85" alt="Modern salon interior">
+      <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=900&q=85" alt="Salon chair and mirror">
+      <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=900&q=85" alt="Barber grooming station">
+      <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=900&q=85" alt="Hair styling session">
+      <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=900&q=85" alt="Beauty and makeup inspiration">
+      <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=900&q=85" alt="Salon hair care">
+    </div>
+  </section>
+
+  <section class="section-padding soft-bg">
+    <div class="container media-section">
+      <div class="section-heading">
+        <p class="eyebrow">SALON TOUR</p>
+        <h2>Take a closer <em>look.</em></h2>
+        <p>Add your own video file to the videos folder to show a salon tour here.</p>
+      </div>
+
+      <div class="video-frame">
+        <video controls preload="metadata" poster="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=1200&q=80">
+          <source src="videos/salon-tour.mp4" type="video/mp4">
+          Your browser does not support video.
+        </video>
+      </div>
+      <p class="media-note">Video filename: <strong>salon-tour.mp4</strong></p>
+    </div>
+  </section>
+
+  <section class="section-padding container">
+    <div class="offer-box">
+      <div><p class="eyebrow">LIKE WHAT YOU SEE?</p><h2>Plan your <em>salon visit.</em></h2><p>Contact the salon to discuss the look you have in mind.</p></div>
+      <a class="btn btn-primary" href="booking.html">Book Now</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand"><a class="brand" href="index.html"><span class="brand-icon">U</span><span>UNISEX SALON</span></a><p>Inspiration for your next look.</p></div>
+    <div><h3>Explore</h3><a href="services.html">Services</a><a href="men.html">Men</a><a href="women.html">Women</a></div>
+    <div><h3>Appointments</h3><a href="booking.html">Book Now</a><a href="contact.html">Contact Us</a></div>
+  </div>
+  <div class="container footer-bottom">© <span id="currentYear"></span> UNISEX SALON</div>
+</footer>
+
+</body>
+</html>
