@@ -784,6 +784,172 @@ h2 {
   font-size: 14px;
 }
 
+
+/* UNISEX SALON - BOOKING PAGE */
+
+.booking-section {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 24px;
+}
+
+.booking-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.booking-heading h1 {
+    font-size: clamp(32px, 5vw, 52px);
+    margin: 15px 0;
+}
+
+.booking-heading p {
+    line-height: 1.8;
+}
+
+.booking-heading p:first-child {
+    color: #d4af37;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.booking-layout {
+    display: grid;
+    grid-template-columns: 0.8fr 1.5fr;
+    gap: 25px;
+}
+
+.booking-info,
+.booking-card {
+    background: #171714;
+    color: #f7f2e8;
+    border: 1px solid #51472d;
+    border-radius: 20px;
+    padding: 28px;
+}
+
+.booking-info {
+    background: linear-gradient(145deg, #29251b, #11110f);
+}
+
+.booking-info h2 {
+    color: #e0c36a;
+}
+
+.booking-info h3 {
+    color: #f0d98b;
+    margin-top: 25px;
+}
+
+.booking-card h2 {
+    font-size: 28px;
+}
+
+.booking-card > p {
+    line-height: 1.7;
+    color: #c5c0b5;
+}
+
+.booking-fields {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px 18px;
+}
+
+.booking-field {
+    min-width: 0;
+}
+
+.booking-field.full {
+    grid-column: 1 / -1;
+}
+
+.booking-field label {
+    display: block;
+    margin-bottom: 9px;
+    font-weight: bold;
+    color: #f0d98b;
+}
+
+.booking-field input,
+.booking-field select,
+.booking-field textarea {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #514c3e;
+    border-radius: 10px;
+    background: #0c0c0b;
+    color: #fff;
+    font: inherit;
+    font-size: 16px;
+}
+
+.booking-field input:focus,
+.booking-field select:focus,
+.booking-field textarea:focus {
+    outline: 2px solid #d4af37;
+    border-color: #d4af37;
+}
+
+.booking-field input::placeholder,
+.booking-field textarea::placeholder {
+    color: #99958b;
+}
+
+.booking-field select option {
+    background: #171714;
+    color: #fff;
+}
+
+.booking-field textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+.booking-submit {
+    width: 100%;
+    padding: 17px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(100deg, #c4a34a, #f0d98b);
+    color: #17130a;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.booking-submit:hover {
+    filter: brightness(1.1);
+}
+
+@media (max-width: 700px) {
+    .booking-section {
+        margin: 25px auto;
+        padding: 16px;
+    }
+
+    .booking-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-info,
+    .booking-card {
+        padding: 20px;
+    }
+
+    .booking-fields {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-field.full {
+        grid-column: auto;
+    }
+}
+
+
 @media (max-width: 1000px) {
   .nav-links {
     gap: 12px;
